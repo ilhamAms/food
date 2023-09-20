@@ -1,0 +1,110 @@
+.menu-container {
+  padding: 120px 0;
+    .head {
+        justify-content: space-between;
+        .next-prev {
+            gap: 2rem;
+            .prev {
+                width: 80px;
+                height: 80px;
+                background-color: hsl(0, 0%, 94%);
+                border-radius: 50%;
+                .icon {
+                    font-size: 2rem;
+                }
+            }
+            .next {
+                width: 80px;
+                height: 80px;
+                background-color: var(--clr-primary);
+                border-radius: 50%;
+                .icon {
+                    font-size: 2rem;
+                    color: var(--clr-white) ;
+                    
+                }
+            }
+               
+            
+        }
+    }
+  .card-salad {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    gap: 2rem;
+
+    .card {
+      background-color: var(--clr-white);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 30px;
+      padding: 50px;
+      position: relative;
+      overflow: hidden;
+
+      .sec-image {
+        width: 276px;
+        height: 276px;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .text {
+        .title {
+          margin-top: 1rem;
+        }
+
+        .text-small {
+          margin-top: 1rem;
+          font-weight: var(--fw-600);
+        }
+
+        .price {
+          margin-top: 0.5rem;
+          align-items: center;
+          justify-content: space-between;
+
+          .text-sub-head {
+            span {
+              color: var(--clr-red);
+              font-size: 1.3rem;
+            }
+          }
+
+          .rating {
+            gap: 0.5rem;
+
+            .icon {
+              font-size: 1.5rem;
+              color: hsl(54, 100%, 51%);
+            }
+
+            span {
+              font-size: var(--text-small);
+              font-weight: var(--fw-600);
+            }
+          }
+        }
+      }
+
+      .green-heart {
+        position: absolute;
+        width: 87px;
+        height: 76px;
+        background-color: var(--clr-primary);
+        top: 0;
+        right: 0;
+        border-radius: 0px 0px 0px 40px;
+
+        .icon {
+          font-size: 24px;
+          color: var(--clr-white);
+        }
+      }
+    }
+  }
+}

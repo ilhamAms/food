@@ -1,0 +1,43 @@
+.thumbail-container {
+    margin-top: 70px;
+    
+    .card {
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        gap: 2rem;
+        
+        
+        .card-items {
+            background-color: var(--clr-white);
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 30px;
+            padding: 40px 70px;
+            .sec-image {
+                width: 153px;
+                height: 153px;
+                background-color: var(--clr-secondary);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+                img {
+                    max-width: 111px;
+                    height: 98px;
+                    width: 100%;
+                }
+            }
+            .title-menu {
+                font-size: var(--fs-sub-head);
+                margin-top: 20px;
+            }
+            span {
+                font-size: var(--text-small);
+                font-weight: var(--fw-600);
+                color: var(--clr-text-black);
+            }
+        }
+    }
+}

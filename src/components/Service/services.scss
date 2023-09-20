@@ -1,0 +1,53 @@
+.service-container {
+    margin-top: 140px;
+    margin-bottom: 140px;
+    .service {
+        gap: 2rem;
+        .text-secvice {
+            flex: 1;
+            .text-head {
+                margin: 50px 0;
+                
+            }
+            .text-body-service {
+                font-size: 26px;
+                line-height: 1.3;
+                color: #555555;
+                
+            }
+            .btn {
+                margin-top: 50px;
+                padding: 15px 40px;
+            }
+        }
+        .card-service {
+            flex: 1;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            .card-item {
+             padding: 40px 20px;   
+             background-color: var(--clr-white);
+             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+             border-radius: 30px;
+             text-align: center;
+             .sec-image {
+                
+                img {
+                    margin: 0 auto;
+                }
+             }
+             .card-title {
+                color: var(--clr-primary);
+                padding: 30px 0;
+                font-size: 24px;
+                text-transform: uppercase;
+             }
+             .text-body {
+                font-size: 20px;
+                font-weight: var(--fw-600);
+                line-height: 1;
+             }
+            }
+        }
+    }
+} 

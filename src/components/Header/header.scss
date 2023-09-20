@@ -1,0 +1,113 @@
+.header {
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    .left {
+        .text {
+            .text-body {
+                margin: 60px 0;
+                font-weight: var(--fw-400);
+            }
+            .btn-group {
+                gap: 2rem;
+                .btn {
+                    box-shadow: var(--btn-shadow);
+                    font-size: var(--fs-paragraph);
+                }
+
+                .play {
+                    gap: 1.5rem;
+                    cursor: pointer;
+                    span {
+                        font-size: var(--fs-paragraph);
+                        font-weight: var(--fw-600);
+                    }
+                    .sec-play {
+                        width: 80px;
+                        height: 80px;
+                        background: var(--clr-white);
+                        box-shadow: var(--box-shadow);
+                        border-radius: 50%;
+                        transition: var(--transition);
+
+                        .icon {
+                            width: 40px;
+                            height: 40px;
+                        }
+                        &:hover {
+                            background-color: var(--clr-primary);
+                        }
+                        &:hover .icon {
+                            color: var(--clr-white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .right {
+        .sec-img {
+            position: relative;
+            .rounded-bg {
+                width: 662px;
+                height: 653px;
+                background-color: var(--clr-primary);
+                border-radius: 50%;
+                margin-top: 70px;
+            }
+            img {
+                position: absolute;
+                top: -145px;
+                object-fit: cover;
+                height: 797px;
+                right: 30px;
+            }
+        }
+        .recommend {
+            position: relative;
+            z-index: 99;
+            margin-top: -4rem;
+            justify-content: space-between;
+            gap: 1rem;
+
+            .left,
+            .right {
+                padding: 20px;
+                background-color: var(--clr-white);
+                gap: 1.25rem;
+                border-radius: 22px;
+                box-shadow: var(--box-shadow);
+                .recommend-menu {
+                    justify-content: space-between;
+                }
+            }
+            img {
+                width: 98px;
+                height: 98px;
+            }
+            .recommend-menu {
+                span {
+                    font-size: 22px;
+                }
+                .star {
+                    gap: 0.3rem;
+                    .icon {
+                        width: 18px;
+                        color: #ffe605;
+                    }
+                    .outline {
+                        color: #b0b4b7;
+                    }
+                }
+                .price {
+                    font-size: 24px;
+                    span {
+                        color: var(--clr-red);
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
